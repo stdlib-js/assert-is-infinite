@@ -155,7 +155,7 @@ bool = isInfinite( null );
 
 ## See Also
 
--   [`@stdlib/assert/is-finite`][@stdlib/assert/is-finite]: test if a value is a finite number.
+-   <span class="package-name">[`@stdlib/assert/is-finite`][@stdlib/assert/is-finite]</span><span class="delimiter">: </span><span class="description">test if a value is a finite number.</span>
 
 </section>
 
