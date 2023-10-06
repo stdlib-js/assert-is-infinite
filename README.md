@@ -35,25 +35,30 @@ limitations under the License.
 
 > Test if a value is an infinite number.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/assert-is-infinite
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import isInfinite from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-infinite@esm/index.mjs';
-```
-The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/assert-is-infinite/tags). For example,
-
-```javascript
-import isInfinite from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-infinite@v0.1.1-esm/index.mjs';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { isObject, isPrimitive } from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-infinite@esm/index.mjs';
+var isInfinite = require( '@stdlib/assert-is-infinite' );
 ```
 
 #### isInfinite( value )
@@ -63,7 +68,7 @@ Tests if a value is an infinite `number`.
 <!-- eslint-disable no-new-wrappers -->
 
 ```javascript
-import Number from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@esm/index.mjs';
+var Number = require( '@stdlib/number-ctor' );
 
 var bool = isInfinite( 1.0/0.0 );
 // returns true
@@ -85,7 +90,7 @@ Tests if a `value` is a primitive `number` having an infinite value.
 <!-- eslint-disable no-new-wrappers -->
 
 ```javascript
-import Number from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@esm/index.mjs';
+var Number = require( '@stdlib/number-ctor' );
 
 var bool = isInfinite.isPrimitive( -1.0/0.0 );
 // returns true
@@ -101,7 +106,7 @@ Tests if a `value` is a `Number` object having an infinite value.
 <!-- eslint-disable no-new-wrappers -->
 
 ```javascript
-import Number from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@esm/index.mjs';
+var Number = require( '@stdlib/number-ctor' );
 
 var bool = isInfinite.isObject( 1.0/0.0 );
 // returns false
@@ -128,14 +133,9 @@ bool = isInfinite.isObject( new Number( 1.0/0.0 ) );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import Number from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@esm/index.mjs';
-import isInfinite from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-infinite@esm/index.mjs';
+```javascript
+var Number = require( '@stdlib/number-ctor' );
+var isInfinite = require( '@stdlib/assert-is-infinite' );
 
 var bool = isInfinite( 1.0/0.0 );
 // returns true
@@ -160,10 +160,6 @@ bool = isInfinite( '1.0/0.0' );
 
 bool = isInfinite( null );
 // returns false
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -193,7 +189,7 @@ bool = isInfinite( null );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -223,8 +219,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/assert-is-infinite.svg
 [npm-url]: https://npmjs.org/package/@stdlib/assert-is-infinite
 
-[test-image]: https://github.com/stdlib-js/assert-is-infinite/actions/workflows/test.yml/badge.svg?branch=v0.1.1
-[test-url]: https://github.com/stdlib-js/assert-is-infinite/actions/workflows/test.yml?query=branch:v0.1.1
+[test-image]: https://github.com/stdlib-js/assert-is-infinite/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/assert-is-infinite/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/assert-is-infinite/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/assert-is-infinite?branch=main
@@ -255,7 +251,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/assert/is-finite]: https://github.com/stdlib-js/assert-is-finite/tree/esm
+[@stdlib/assert/is-finite]: https://github.com/stdlib-js/assert-is-finite
 
 <!-- </related-links> -->
 
