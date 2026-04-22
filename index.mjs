@@ -1,0 +1,4 @@
+// Copyright (c) 2026 The Stdlib Authors. License is Apache-2.0: http://www.apache.org/licenses/LICENSE-2.0
+/// <reference types="./index.d.ts" />
+import s from"https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-nonenumerable-read-only-property@v0.2.3-esm/index.mjs";import{isPrimitive as e}from"https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-number@v0.2.3-esm/index.mjs";import t from"https://cdn.jsdelivr.net/gh/stdlib-js/math-base-assert-is-infinite@v0.2.3-esm/index.mjs";import{isObject as i}from"https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-number@esm/index.mjs";function n(s){return e(s)&&t(s)}function r(s){return i(s)&&t(s.valueOf())}function m(s){return n(s)||r(s)}s(m,"isPrimitive",n),s(m,"isObject",r);export{m as default,r as isObject,n as isPrimitive};
+//# sourceMappingURL=index.mjs.map
